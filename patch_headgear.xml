@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- ========== Bandolier ========== -->
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Bandolier"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>		
+		</value>
+	</Operation>
+	
+	
+<!-- Apparel_Earmuff теплые наушники -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_Earmuff"]/apparel</xpath>
+        <value>
+			<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<!-- <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace> -->
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/May/Earmuff</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Outlander</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>    
+			</apparel>
+        </value>
+  </Operation>
+
+<!-- Apparel_Psymask шлем с противогазом -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_Psymask"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+
+
+<!-- Apparello_Gas газовая маска -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Gas"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <!-- Apparello_ViperGas противогаз V -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_ViperGas"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <!-- Apparello_Cyninja тактический платок -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Cyninja"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <!-- Marine_TacticalMask балаклава -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Cyninja"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <!-- WeldingHelmet маска сварщика -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="WeldingHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+   <!-- Apparel_Respirator респиратор -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_Respirator"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_Respirator"]/apparel/bodyPartGroups</xpath>
+        <value>
+			<li>Nose</li>
+        </value>
+  </Operation>
+  
+     <!-- Apparel_PlagueDoctorMask чумной доктор -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PlagueDoctorMask"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PlagueDoctorMask"]/apparel/bodyPartGroups</xpath>
+        <value>
+			<bodyPartGroups>
+			<li>FullHead</li>
+			</bodyPartGroups>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_PlagueDoctorMask"]</xpath>
+        <value>
+				<modExtensions>
+				<li Class="CombatExtended.ApparelHediffExtension">
+					<hediff>WearingGasMask</hediff>
+				</li>
+				<li Class="CombatExtended.ApperalRenderingExtension">
+					<HideHair>true</HideHair>
+					<HideBeard>true</HideBeard>
+				</li>
+				</modExtensions>
+		</value>
+  </Operation>
+  
+       <!-- Apparel_PowerArmorHelmet космопехотный шлем -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+       <!-- SiegearmorHelmet осадный шлем -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SiegearmorHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+         <!-- CCArmorHelmet кибер шлем -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CCArmorHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+    
+         <!-- Apparel_ArmorHelmetRecon разведшлем -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetReconBase"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+		</Operation>
+		 <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+		</Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetCataphractBase"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="AM_CataphractHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+          <!-- Apparello_Proto прото -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Proto"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_ProtoFin"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+       <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Antsyhat"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+            <!-- Apparello_Proto меффект -->
+   <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Meffect"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Meffectwo"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+   <!-- Apparel_HellPowerArmorHelmet -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_HellPowerArmorHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+   <!-- Apparel_DoomHelmet -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_DoomHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <!-- Apparello_LPow -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_LPow"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+    <!-- Apparello_Hivehell Apparello_Hivehat -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Hivehell"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparello_Hivehat"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+
+ <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PhaseHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+
+<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="AM_FullyEnclosedHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="AM_NightVisionHelmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_Sapper_Helmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_GasMask"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CE_Apparel_ImprovGasMask"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CE_Apparel_ImprovGasMask"]/apparel/bodyPartGroups</xpath>
+        <value>
+			<li>Nose</li>
+        </value>
+  </Operation>
+  
+     <!-- Tactical_Helmet -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Tactical_Helmet"]/statBases</xpath>
+        <value>
+			<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<Mass>0.4</Mass>
+			<Bulk>2.2</Bulk>
+			<WornBulk>0</WornBulk>
+			<EquipDelay>2.7</EquipDelay>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>6.3</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			</statBases>
+        </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Tactical_Helmet"]/apparel/layers</xpath>
+        <value>
+			<layers>
+			<li>Overhead</li>
+			<li>StrappedHead</li>
+			</layers>
+        </value>
+  </Operation>
+  
+</Patch>
+
